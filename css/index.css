@@ -77,10 +77,14 @@ width: 50%;
 #header_click_1 , #header_click_2 , #header_click_3{
     background-color: #fff;
     width: 60px;
-    height: 3px;
+    height: 2px;
     cursor: pointer;
     margin: 0 5px;
     border-radius:  2px 3px;
+}
+
+.header__bg{
+    background-color: white;
 }
 
 .header__click{
