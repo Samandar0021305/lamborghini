@@ -22,6 +22,8 @@ a{
 
 .nav{
     background-color: #202020;
+    position: sticky;
+    top: 0;
 }
 
 .nav-list{
@@ -51,18 +53,37 @@ width: 50%;
 }
 .header{
     height: calc(100vh - 80px);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    /* background-attachment:local; */
+    background-attachment: fixed;
     /* background-position: top 0 left 700px; */
+    transition: all 0.3s ease-in-out;
 }
 
 .header__text{
     font-size: 25px;
     color: white;
+    padding: 10px 0;
 }
 
 .header__title{
     font-size: 72px;
     width: 500px;
     color: white;
+    padding: 10px 0;
+}
+
+#header_click_1 , #header_click_2 , #header_click_3{
+    background-color: #fff;
+    width: 60px;
+    height: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius:  2px 3px;
+}
+
+.header__click{
+    display: flex;
+    padding: 30px 0 ;
 }

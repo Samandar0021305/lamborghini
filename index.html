@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lamborghini</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/normalizee.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -33,11 +36,25 @@
 
     <header class="header" id="header">
         <div class="container">
-          <p class="header__text">HURICAN TECNICA</p>
-          <h2 class="header__title">TAKE ALL YOUR SOULS TO DRIVE</h2>
+          <p data-aos="fade-right"
+          data-aos-offset="500"
+               class="header__text">HURICAN TECNICA</p>
+          <h2  data-aos="fade-up-right"
+          data-aos-offset="400"  class="header__title">TAKE ALL YOUR SOULS TO DRIVE</h2>
+         
+          
+          <div class="header__click">
+            <div id="header_click_1"></div>
+            <div id="header_click_2"></div>
+            <div id="header_click_3"></div>
+          </div>
         </div>
     </header>
 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <script src="./js/script.js"></script>
 </html>
