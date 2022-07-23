@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav__lamborghini{
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+.nav{
+    background-color: #202020;
+}
+
+.nav-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 50%;
+
+}
+
+.nav-list a{
+    font-size: 16px;
+    color: white;
+}
+
+.navbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-color: #202020;
+}
+.header{
+    height: calc(100vh - 80px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: top 0 left 700px; */
+}
+
+.header__text{
+    font-size: 25px;
+    color: white;
+}
+
+.header__title{
+    font-size: 72px;
+    width: 500px;
+    color: white;
+}
