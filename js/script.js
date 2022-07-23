@@ -26,3 +26,10 @@ headerClick2.addEventListener("click",function(){
 headerClick3.addEventListener("click",function(){
     header.style.backgroundImage = `url(${arry[0]})`
 })
+
+
+// setInterval(setTime,3000)
+
+// function setTime(arry = []){
+// let normalizeeArry = arry
+// }
