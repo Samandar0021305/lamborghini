@@ -252,7 +252,26 @@ that they form a hexagon */
     /* background-image: url(../assets/img2/family_chooser_tecnica.jpg), url("../assets/img2/tecnica.jpg"); */
 }
 
+.background__img12{
+    display: flex;
+}
+
 #background_1 , #background_2 , #background_3{
     height: 100%;
     width: 400px;
+}
+
+.hero_bg{
+    display: flex;
+}
+
+#hero_bg_1 , #hero_bg_2 , #hero_bg_3{
+    width: 60px;
+    height: 2px;
+    cursor: pointer;
+    background-color:rgb(165, 165, 65);
+}
+
+.hero{
+    height: 100vh;
 }

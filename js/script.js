@@ -144,6 +144,53 @@ let arryImg = [
 
 
 
-background_1.style.background = `url(${arryImg[0]})`
-background_2.style.background = `url(${arryImg[1]})`
-background_3.style.background = `url(${arryImg[2]})`
+
+// background_1.style.background = `url(${arryImg[0]})`
+// background_2.style.background = `url(${arryImg[1]})`
+// background_3.style.background = `url(${arryImg[2]})`
+
+
+
+
+
+// hero pages
+
+
+
+let heroElement = document.querySelector(".hero")
+
+let heroText = document.querySelector("hero__text")
+let heroTitle = document.querySelector(".hero__title")
+
+let heroTextarry = ["CONFIGURATOR","CONFIGURATOR","CONFIGURATOR"];
+let heroTitlearry = ["CREATE YOUR AVENTADOR", "CREATE YOUR HURACÁN","CREATE YOUR URUS"]
+
+let hero_bg_1 = document.getElementById("hero_bg_1")
+let hero_bg_2 = document.getElementById("hero_bg_2")
+let hero_bg_3 = document.getElementById("hero_bg_3")
+
+let heroImg =["../assets/hero-img/Homepage CC AVANZAMENTO_ultimae_1920_706.jpg","../assets/hero-img/Homepage CC URUS_1920_706.png","../assets/hero-img/model_chooser_tecnica.jpg"]
+// heroBg()
+heroElement.style.backgroundImage = `url(${heroImg[0]})`
+heroText.textContent = heroTextarry[0]
+    
+hero_bg_1.addEventListener("click",function(){
+    heroText.textContent = heroTextarry[0]
+    heroElement.style.backgroundImage = `url(${heroImg[0]})`
+})
+
+
+
+hero_bg_1.addEventListener("click",function(){
+    heroText.textContent = heroTextarry[1]
+    heroElement.style.backgroundImage = `url(${heroImg[1]})`
+})
+
+
+
+hero_bg_1.addEventListener("click",function(){
+    heroText.textContent = heroTextarry[2]
+    heroElement.style.backgroundImage = `url(${heroImg[2]})`
+})
+
+
