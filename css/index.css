@@ -55,6 +55,8 @@ width: 50%;
     height: calc(100vh - 80px);
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
     /* background-attachment:local; */
     background-attachment: fixed;
     /* background-position: top 0 left 700px; */
@@ -74,14 +76,7 @@ width: 50%;
     padding: 10px 0;
 }
 
-#header_click_1 , #header_click_2 , #header_click_3{
-    background-color: #fff;
-    width: 60px;
-    height: 2px;
-    cursor: pointer;
-    margin: 0 5px;
-    border-radius:  2px 3px;
-}
+
 
 .header__bg{
     background-color: white;
@@ -89,14 +84,18 @@ width: 50%;
 
 .header__click{
     display: flex;
-    padding: 30px 0 ;
+    padding: 130px 0 ;
+    padding-bottom: 0;
 }
 
 .hexagon {
-    top: 30vh;
+    cursor: pointer;
+    /* top: 30vh; */
     position: absolute;
     margin: 0 auto;
-    background-color: white;
+    margin-top: 20px;
+    /* padding: 20px 0; */
+    background-color: inherit;
     border-radius: 10px;
     width: 100px; 
     height: 63px;
@@ -112,7 +111,7 @@ width: 50%;
     position: absolute;
     top: -0.5vh;
     left: -0.5vh;
-    background-color: white;
+    background-color: inherit;
     border-radius: inherit;
     height: 100%;
     width: 100%;
@@ -125,4 +124,124 @@ that they form a hexagon */
 }
 .hexagon:after {
     transform: rotate(-60deg);
+}
+
+.navbar-CUSTOM{
+ display: flex;
+ justify-content: space-between;
+ /* align-items: center; */
+ width: 50%;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 1;
+    background-color: #202020;
+    width: 100%;
+    visibility: hidden;
+}
+
+.navbar-CUSTOM li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.navbar-CUSTOM a{
+    font-size: 12px;
+    color: white;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.navbar__lamborghini{
+    visibility: hidden;
+    /* display: none; */
+}
+
+.nav-display{
+    visibility: visible !important;
+}
+
+.MODELS__item , .CUSTOM__item , .OWENRWIP__item , .MOTORSPORT__item{
+    visibility: hidden;
+}
+
+#header_click_1 , #header_click_2 , #header_click_3{
+    background-color: #fff;
+    width: 60px;
+    height: 2px;
+    cursor: pointer !important;
+    margin: 0 5px;
+    border-radius:  2px 3px;
+}
+
+.navbar-visibly{
+    visibility: hidden !important;
+}
+
+#MODELS  , #CUSTOM , #OWENRWIP , #MOTORSPORT{
+    color: white;
+    transition-duration: 0.4s;
+    transition-property: border;
+    padding-bottom: 5px;
+    /* transition-delay: 0.3s; */
+    opacity: 0.8;
+    transition-timing-function: ease-in-out;
+}
+
+
+#MODELS:hover  , #CUSTOM:hover , #OWENRWIP:hover , #MOTORSPORT:hover{
+
+    border-bottom: 1px solid white;
+    opacity: 1;
+
+}
+
+.navbar-CUSTOM a{
+    opacity: 0.7;
+    transition-property: border;
+    padding-bottom: 5px;
+    /* transition-delay: 0.3s; */
+    /* opacity: 0.8; */
+    transition-timing-function: ease-in-out;
+}
+.navbar-CUSTOM a:hover{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    opacity: 1;
+}
+
+#nav__toogle{
+    width: 40px;
+    height: 40px;
+    /* background-color: white; */
+    cursor: pointer;
+    /* box-shadow: 2px 3px 4px white; */
+    display: none;
+}
+
+.navbar__list__toogle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.navbar____tooogle{
+    display: none;
+    background-color: #202020;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar____tooogle-block{
+    display: block !important;
+}
+
+.navbar__list__toogle a{
+    color: white;
+    padding: 20px 0;
 }

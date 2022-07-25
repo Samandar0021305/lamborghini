@@ -10,18 +10,22 @@
 
     <link rel="stylesheet" href="./css/normalizee.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <div class="container navbar-box">
             <img class="nav__lamborghini" src="./assets/img/lambargini-removebg-preview.png" alt="">
-           <ul class="nav-list">
+           
+            <img id="nav__toogle" src="./assets/img/menu.png" alt="">
+            <ul class="nav-list">
             <li>
                 <a href="#" id="MODELS"> MODELS</a>
             </li>
             <li>
                 <a href="#" id="CUSTOM"> CUSTOM SOLUTIONS</a>
+                
             </li>
             <li>
                 <a href="#" id="OWENRWIP"> OWENRWIP</a>
@@ -34,9 +38,65 @@
         </div>
     </nav>
 
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-box">
+            <img class="nav__lamborghini navbar__lamborghini"  src="./assets/img/lambargini-removebg-preview.png"  alt="logo">
+            <ul class="navbar-CUSTOM">
+                <li id="MODELS__item" class="MODELS__item">
+                    <a href="#">AVENTADOR</a>
+                    <a href="#">HURACAN</a>
+                    <a href="#">URUS</a>
+                    <a href="#">PRE-OWNED</a> 
+                    <a href="#">LIMITED SERIES</a> 
+                    <a href="#">CONCEPT</a> 
+                </li>
+                <li id="CUSTOM__item" class="CUSTOM__item">
+                    <a href="#">CUSTOMIZATION</a>
+                    <a href="#">ACCESSORIES</a>
+                    <a href="#">FINANCIAL SERVICES</a>
+                    <a href="#">WARRANTY EXTENSION</a>
+                </li>
+                <li id="OWENRWIP__item" class="OWENRWIP__item">
+                    <a href="#">CONNECTIVITY</a>
+                    <a href="#">CUSTOMER APP</a>
+                    <a href="#">MOBILITY PROGRAM</a>
+                    <a href="#">SERVICE</a>
+                </li>
+                <li class="MOTORSPORT__item" id="MOTORSPORT__item">
+                    <a href="#">SUPER TROFEO</a>
+                    <a href="#">GT3</a>
+                    <a href="#">MOTORSPORT</a>
+                    <a href="#">DRIVERS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar____tooogle">
+        <div class="container">
+            <ul class="navbar__list__toogle">
+                <li>
+                    <a href="#"> MODELS</a>
+                </li>
+                <li>
+                    <a href="#"> CUSTOM SOLUTIONS</a>
+                    
+                </li>
+                <li>
+                    <a href="#"> OWENRWIP</a>
+                </li>
+                <li>
+                    <a href="#"> MOTORSPORT</a>
+                </li>
+            
+               </ul>
+        </div>
+    </nav>
+
     <header class="header" id="header">
         <div class="container">
-          <p data-aos="fade-right"
+          <div class="header__box-row">
+            <p data-aos="fade-right"
           data-aos-offset="500"
                class="header__text">HURICAN TECNICA</p>
           <h2  data-aos="fade-up-right"
@@ -53,8 +113,30 @@
             <div id="header_click_2"></div>
             <div id="header_click_3"></div>
           </div>
+          </div>
         </div>
     </header>
+
+
+
+
+
+    <main>
+        <section class="section" id="section">
+            <div class="container">
+
+                <div>
+                    <h2>MODELS</h2>
+                    <span>
+                        
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
 
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
