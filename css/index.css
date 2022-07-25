@@ -298,3 +298,25 @@ that they form a hexagon */
 #hero_bg_1:hover , #hero_bg_2:hover , #hero_bg_3:hover{
 background-color: black;
 }
+
+.intro{
+    height: calc(100vh - 80px);
+    background: url("../assets/hero-img/533702.jpg") , no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.intro p{
+    font-size: 25px;
+    color: white;
+    padding: 40px 0;
+}
+
+.intro h2{
+    color:#fff;
+    font-size: 72px;
+    font-size: 72px;
+    width: 700px;
+    color: white;
+    padding: 10px 0;
+}
