@@ -131,5 +131,19 @@ nav.addEventListener("mouseenter",function(){
 
 
 
+let sectionElement = document.getElementById("section")
+
+let background_1 = document.getElementById("background_1");
+let background_2 = document.getElementById("background_2");
+let background_3 = document.getElementById("background_3");
 
 
+let arryImg = [
+    "../assets/img2/family_chooser_tecnica.jpg", "../assets/img2/tecnica.jpg","../assets/img2/ultimae_coupe_Compositing_4terzi_00.jpg"
+]
+
+
+
+background_1.style.background = `url(${arryImg[0]})`
+background_2.style.background = `url(${arryImg[1]})`
+background_3.style.background = `url(${arryImg[2]})`
