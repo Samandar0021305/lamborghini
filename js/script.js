@@ -156,41 +156,36 @@ let arryImg = [
 // hero pages
 
 
+var heroElement = document.getElementById("hero");
+var hero__title = document.querySelector(".hero__title")
 
-let heroElement = document.querySelector(".hero")
+var heroBg1 = document.getElementById("hero_bg_1") 
+var heroBg2 = document.getElementById("hero_bg_2") 
+var heroBg3 = document.getElementById("hero_bg_3") 
 
-let heroText = document.querySelector("hero__text")
-let heroTitle = document.querySelector(".hero__title")
+var heroTitlearry = ["CREATE YOUR AVENTADOR", "CREATE YOUR HURACÁN","CREATE YOUR URUS"]
+// var heroImg = ["../assets/hero-img/Homepage CC AVANZAMENTO_ultimae_1920_706.jpg","../assets/hero-img/Homepage CC URUS_1920_706.png","../assets/hero-img/model_chooser_tecnica.jpg"]
 
-let heroTextarry = ["CONFIGURATOR","CONFIGURATOR","CONFIGURATOR"];
-let heroTitlearry = ["CREATE YOUR AVENTADOR", "CREATE YOUR HURACÁN","CREATE YOUR URUS"]
+var heroImg = ["../assets/hero-img/hero-1.jpg","../assets/hero-img/hero-2.png","../assets/hero-img/hero-3.jpg"]
 
-let hero_bg_1 = document.getElementById("hero_bg_1")
-let hero_bg_2 = document.getElementById("hero_bg_2")
-let hero_bg_3 = document.getElementById("hero_bg_3")
+heroElement.style.background = `url(${heroImg[0]})`
 
-let heroImg =["../assets/hero-img/Homepage CC AVANZAMENTO_ultimae_1920_706.jpg","../assets/hero-img/Homepage CC URUS_1920_706.png","../assets/hero-img/model_chooser_tecnica.jpg"]
-// heroBg()
-heroElement.style.backgroundImage = `url(${heroImg[0]})`
-heroText.textContent = heroTextarry[0]
-    
-hero_bg_1.addEventListener("click",function(){
-    heroText.textContent = heroTextarry[0]
-    heroElement.style.backgroundImage = `url(${heroImg[0]})`
+
+heroBg1.addEventListener("click",()=>{
+    heroElement.style.background = `url(${heroImg[0]})`
+    hero__title.textContent = heroTitlearry[0]
 })
 
 
+heroBg2.addEventListener("click",()=>{
+    heroElement.style.background = `url(${heroImg[1]})`
+    hero__title.textContent = heroTitlearry[1]
 
-hero_bg_1.addEventListener("click",function(){
-    heroText.textContent = heroTextarry[1]
-    heroElement.style.backgroundImage = `url(${heroImg[1]})`
 })
 
 
+heroBg3.addEventListener("click",()=>{
+    heroElement.style.background = `url(${heroImg[2]})`
+    hero__title.textContent = heroTitlearry[2]
 
-hero_bg_1.addEventListener("click",function(){
-    heroText.textContent = heroTextarry[2]
-    heroElement.style.backgroundImage = `url(${heroImg[2]})`
 })
-
-
